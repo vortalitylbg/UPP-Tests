@@ -12,12 +12,16 @@ body {
 
 #warning {
   background-color: rgb(44, 44, 44);
-  color: rgb(141, 8, 8);
+  color: rgb(189, 10, 10);
   padding: 0.3%;
 }
 
 a {
   text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .white {

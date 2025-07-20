@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Un Pixel Près</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -45,21 +46,21 @@
 
     <section id="about" class="about">
         <div class="about-left">
-            <div class="about-card">
+            <div class="about-card" data-aos="fade-right">
                 <img src="images/icons/mesure.png" alt="Sites sur-mesure">
                 <p>Sites 100 % sur-mesure</p>
             </div>
-            <div class="about-card">
+            <div class="about-card" data-aos="fade-right">
                 <img src="images/icons/optimisation.png" alt="Optimisés">
                 <p>Optimisés pour tous les écrans</p>
             </div>
-            <div class="about-card">
+            <div class="about-card" data-aos="fade-right">
                 <img src="images/icons/delais.png" alt="Respect des délais">
                 <p>Respect des délais</p>
             </div>
         </div>
 
-        <div class="about-right">
+        <div class="about-right" data-aos="fade-left">
             <h2>Qui suis-je ?</h2>
             <p>
                 Je suis Timothée, développeur web freelance spécialisé dans la création de sites modernes et performants.
@@ -122,7 +123,7 @@
     <section id="process" class="process">
         <h2>Processus de projet</h2>
         <div class="timeline">
-            <div class="timeline-step left">
+            <div class="timeline-step left" data-aos="fade-right" data-aos-duration="800">
                 <div class="icon" style="background:#7D5DFB;">
                     <img src="images/icons/process/presentation.png" alt="Présentation">
                 </div>
@@ -132,7 +133,7 @@
                 </div>
             </div>
             
-            <div class="timeline-step right">
+            <div class="timeline-step right" data-aos="fade-left" data-aos-duration="800">
                 <div class="icon" style="background:#FF66C4;">
                     <img src="images/icons/process/devis.png" alt="Échange & Devis">
                 </div>
@@ -142,7 +143,7 @@
                 </div>
             </div>
             
-            <div class="timeline-step left">
+            <div class="timeline-step left" data-aos="fade-right" data-aos-duration="800">
                 <div class="icon" style="background:#00C48C;">
                     <img src="images/icons/process/lancement.png" alt="Lancement du site">
                 </div>
@@ -152,7 +153,7 @@
                 </div>
             </div>
             
-            <div class="timeline-step right">
+            <div class="timeline-step right" data-aos="fade-left" data-aos-duration="800">
                 <div class="icon" style="background:#7D5DFB;">
                     <img src="images/icons/process/modifications.png" alt="Modifications & Ajustements">
                 </div>
@@ -162,7 +163,7 @@
                 </div>
             </div>
             
-            <div class="timeline-step left">
+            <div class="timeline-step left" data-aos="fade-right" data-aos-duration="800">
                 <div class="icon" style="background:#FF66C4;">
                     <img src="images/icons/process/validation.png" alt="Validation finale">
                 </div>
@@ -172,7 +173,7 @@
                 </div>
             </div>
             
-            <div class="timeline-step right">
+            <div class="timeline-step right" data-aos="fade-left" data-aos-duration="800">
                 <div class="icon" style="background:#00C48C;">
                     <img src="images/icons/process/livraison.png" alt="Livraison">
                 </div>
@@ -234,5 +235,10 @@
 
     <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
     <script src="lenis.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

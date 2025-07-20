@@ -753,7 +753,7 @@ header {
 .card-tarif ul li {
     list-style: none;
     margin: 1rem 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #333;
 }
 
@@ -762,7 +762,7 @@ header {
     color: green;
     font-weight: 500;
     left: 0;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 .options-tarifs {

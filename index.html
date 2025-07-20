@@ -3,55 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CG-Hub - Accueil</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/24c4d1c3cd.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="img/logo-CG.png" type="image/x-icon">
+    <title>Un Pixel Près</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Un <span>Pixel</span> Près</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#avis">Avis</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" class="btn-devis">Demander un devis</a>
+            <div class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
 
-    <div id="warning">
-        <i class="fa-solid fa-triangle-exclamation"></i>
-        <span>Ce site étant en <span class="bold">version beta</span>, la barre de recherche n'est pas encore fonctionnelle.</span>
-    </div>
-
-    <nav>
-        <div id="nav-bar">
-            <a id="nav-bar-title" href="index.html" class="orange">
-                <img width="60px" src="img/logo-CG.png" alt="logo du site">
-            </a>
-            <div id="nav-pages">
-                <a href="pages/p1.html">
-                    <span >Page 1</span>
-                </a>
-                <a href="pages/p2.html">
-                    <span>Page 2</span>
-                </a>
-                <a href="pages/p3.html">
-                    <span>Page 3</span>
-                </a>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Un site web sur-mesure pour</h1>
+            <span><span id="typed"></span></span>
+            <p>Développeur freelance – Sites modernes, performants et adaptés à vos besoins.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">Commencer mon projet</a>
+                <a href="#" class="btn-secondary">Voir mes réalisations</a>
             </div>
         </div>
-    </nav>
-
-
-    <section id="hero">
-        <div id="title">
-            <span class="white">Bienvenue sur</span>
-            <span class="orange">CG-Hub</span>
+        <div class="hero-image">
+            <img src="images/illustration.png" alt="Illustration">
         </div>
-
-        <input type="search" title="search-bar" id="search-bar" placeholder="Rechercher sur CG-Hub...">
-
-        <a href="pages/p1.html">
-            <div id="button">
-                <i class="fa-solid fa-gamepad"></i>
-                <span>Acceder à touts nos jeux</span>
-            </div>
-        </a>
-
+        <img src="images/bottom_wave.svg" alt="Vague décorative" class="vague">
     </section>
-    
+
+    <section id="about" class="about">
+        <div class="about-left">
+            <div class="about-card">
+                <img src="images/icons/mesure.png" alt="Sites sur-mesure">
+                <p>Sites 100 % sur-mesure</p>
+            </div>
+            <div class="about-card">
+                <img src="images/icons/optimisation.png" alt="Optimisés">
+                <p>Optimisés pour tous les écrans</p>
+            </div>
+            <div class="about-card">
+                <img src="images/icons/delais.png" alt="Respect des délais">
+                <p>Respect des délais</p>
+            </div>
+        </div>
+
+        <div class="about-right">
+            <h2>Qui suis-je ?</h2>
+            <p>
+                Je suis Timothée, développeur web freelance spécialisé dans la création de sites modernes et performants.
+                Mon objectif est d’aider les entrepreneurs et petites entreprises à avoir une présence en ligne efficace et attractive.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <img src="images/top_wave.svg" alt="Vague haut" class="vague wave-top">
+        
+        <div class="services-container">
+            <h2>Mes services</h2>
+            <div class="services-grid">
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <img src="images/icons/services/site_vitrine.png" alt="Site vitrine">
+                            <h3>Site vitrine</h3>
+                        </div>
+                        <p class="para">Un site clair et attractif pour présenter votre activité en ligne.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <img src="images/icons/services/site_sur_mesure.png" alt="Site sur-mesure">
+                            <h3>Site sur-mesure</h3>
+                        </div>
+                        <p class="para">Un design unique et des fonctionnalités adaptées à vos besoins.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <img src="images/icons/services/code.png" alt="Code fait main">
+                            <h3>Code fait main</h3>
+                        </div>
+                        <p class="para">HTML, CSS & JS propres et optimisés pour la performance.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <img src="images/icons/services/responsive.png" alt="Sites responsives">
+                            <h3>Sites responsives</h3>
+                        </div>
+                        <p class="para">Compatible mobile, tablette et tous les écrans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="images/bottom_wave.svg" alt="Vague bas" class="vague">
+    </section>
+
+
+    <section id="process" class="process">
+        <h2>Processus de projet</h2>
+        <div class="timeline">
+            <div class="timeline-step left">
+                <div class="icon" style="background:#7D5DFB;">
+                    <img src="images/icons/process/presentation.png" alt="Présentation">
+                </div>
+                <div class="content">
+                    <h3>PRÉSENTATION DE VOTRE PROJET</h3>
+                    <p>Vous remplissez un formulaire pour me partager vos besoins, vos idées et le style de site que vous avez en tête.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-step right">
+                <div class="icon" style="background:#FF66C4;">
+                    <img src="images/icons/process/devis.png" alt="Échange & Devis">
+                </div>
+                <div class="content">
+                    <h3>ÉCHANGE & DEVIS</h3>
+                    <p>Je vous contacte rapidement pour clarifier certains points, répondre à vos questions, et vous proposer un devis transparent et adapté à vos attentes.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-step left">
+                <div class="icon" style="background:#00C48C;">
+                    <img src="images/icons/process/lancement.png" alt="Lancement du site">
+                </div>
+                <div class="content">
+                    <h3>LANCEMENT DU SITE</h3>
+                    <p>Une fois l'acompte initial de 60% réglé, je démarre la création de votre site et vous recevez un lien temporaire pour suivre l’avancement et me faire part de vos premiers retours.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-step right">
+                <div class="icon" style="background:#7D5DFB;">
+                    <img src="images/icons/process/modifications.png" alt="Modifications & Ajustements">
+                </div>
+                <div class="content">
+                    <h3>MODIFICATIONS & AJUSTEMENTS</h3>
+                    <p>Tout au long du développement, vous pouvez me indiquer les points à corriger ou améliorer. Le site évolue selon vos retours pour correspondre à votre vision.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-step left">
+                <div class="icon" style="background:#FF66C4;">
+                    <img src="images/icons/process/validation.png" alt="Validation finale">
+                </div>
+                <div class="content">
+                    <h3>VALIDATION FINALE</h3>
+                    <p>Lorsque vous êtes satisfait et le site validé, vous procédez au paiement final des 40%.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-step right">
+                <div class="icon" style="background:#00C48C;">
+                    <img src="images/icons/process/livraison.png" alt="Livraison">
+                </div>
+                <div class="content">
+                    <h3>LIVRAISON</h3>
+                    <p>Je vous livre le site selon vos préférences : fichiers complets à télécharger ou mise en ligne sur mon hébergement (si cette option est choisie).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="typed.js"></script>
+
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+    <script src="lenis.js"></script>
 </body>
 </html>

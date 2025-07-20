@@ -393,18 +393,14 @@ header {
     overflow: hidden;
 }
 
-.wave {
-    position: absolute;
-    left: 0;
-    width: 100%;
-}
-
 .wave-top {
     top: 0;
+    width: 100%;
 }
 
 .wave-bottom {
     bottom: 0;
+    width: 100%;
 }
 
 .services-container {
@@ -485,7 +481,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
     height: 300px;
     border-radius: 24px;
     line-height: 1.6;
@@ -681,5 +679,118 @@ header {
     }
     .content {
         text-align: left;
+    }
+}
+
+
+/* Tarifs Section */
+
+.tarifs {
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.tarifs h1 {
+    color: #0077FF;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.tarifs-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 7rem;
+}
+
+.card-tarif {
+    cursor: pointer;
+    background-color: #fff;
+    padding: 2%;
+    width: 100%;
+    max-width: 35%;
+    height: auto;
+    border: #0077FF 2px solid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    unicode-bidi: isolate;
+    transition: transform 0.2s ease;
+}
+
+.card-tarif:hover {
+    transform: translateY(-8px);
+    transition: transform 0.2s ease;
+}
+
+.card-tarif h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #0077FF;
+    margin-bottom: 1rem;
+}
+
+.card-tarif h3 {
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.card-tarif ul {
+    padding: 0;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+
+.card-tarif ul li {
+    list-style: none;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card-tarif ul li::before {
+    content: "✔";
+    color: green;
+    font-weight: 500;
+    left: 0;
+    margin-right: 10%;
+}
+
+.options-tarifs {
+    background-color: #0077FF;
+    border: none;
+}
+
+.options-tarifs h2, .options-tarifs h3, .options-tarifs ul li {
+    color: #fff;
+}
+.options-tarifs ul li::before {
+    color: rgb(41, 239, 41);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tarifs-container {
+        display: block;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .card-tarif {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
     }
 }
